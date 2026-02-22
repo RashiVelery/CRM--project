@@ -13,7 +13,10 @@ const app = express();
 
 app.use(
     cors({
-        origin: 'https://crm-project-3lbhfrontend.vercel.app/',
+        origin: [
+            "http://localhost:5173",
+            "https://crm-project-3lbhfrontend.vercel.app"
+        ],
         credentials: true,
     })
 );
